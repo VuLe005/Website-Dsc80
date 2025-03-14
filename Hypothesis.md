@@ -4,6 +4,16 @@ title: Hypothesis Testing
 ---
 
 Question: Do tanks/bruiser have higher damage mitigated per minute compared to tanky supports?
+Null Hypothesis: Tanks/bruisers have a higher damage mitigated than tanky supports.
+Alternate Hypothesis: Tanks/bruisers have a lower damage mitigated than tanky supports.
+Test Statistic: Difference in Means
+Alpha Level: .05
+
+Explanation:
+    Null Hypothesis: Tanks/bruisers should have higher damage mitigated per minute due to being a solo laner ( Top Lane )
+    Alternate Hypothesis: Opposite to the null hypothesis. Tanky supports should be protecting their ADC, and shielding the damage
+    Test Statistic: We should be able to see a mean difference if true, since damage mitigated per minute is a numerical value
+    Alpha Level: We set an alpha level of .05, because this is common and is enough to showcase if our p-value is true
 
 <p class="message">
     This section is dedicated to the Hypothesis Testing
@@ -73,14 +83,7 @@ print(p_value)
 0.0
 ```
 
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](https://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Atom](https://atom.io)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+Conclusion:
+    P-value = 0.0
+    Since our P-value (0.0) is less than our significance level (alpha = .05), this suggests that tanks/bruiser
+    have a higher damage mitigated per minute than tanky supports.
