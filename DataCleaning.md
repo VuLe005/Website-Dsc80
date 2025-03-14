@@ -8,13 +8,13 @@ title: Data Cleaning and EDA
 </p>
 
 
-Here's our cleaned data:
+Here's our initial data:
 
 ```py
-print(df.head())
+print(raw_df.head())
 ```
 
-<iframe src="{{ site.url }}{{ site.baseurl }}/assets/cleaned_df_head.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/raw_head.html" width=800 height=600 frameBorder=0></iframe>
 
 
 
