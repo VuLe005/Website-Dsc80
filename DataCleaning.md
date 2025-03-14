@@ -11,7 +11,7 @@ title: Data Cleaning and EDA
 Here's our initial data:
 
 ```py
-print(raw_df.head().to_markdown(index=False))
+print(cleaned_df.head().to_markdown(index=False))
 ```
 
 <iframe src="{{ site.url }}{{ site.baseurl }}/assets/cleaned_df_head.html" width=800 height=600 frameBorder=0></iframe>
