@@ -43,6 +43,21 @@ accuracy
 0.7817412624393058
 ```
 
+Univariate Analysis:
+
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/ckass_actual.html" width=800 height=600 frameBorder=0></iframe>
+
+Bivariate Analysis:
+
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/damagetakenperminute.html" width=800 height=600 frameBorder=0></iframe>
+
+
+Assesment of missingness:
+
+One column that depends on another is towers and gamelength, which the longer the game happens,
+the more towers are destroyed
+
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/cleaned_df_head.html" width=800 height=600 frameBorder=0></iframe>
 
 
 
