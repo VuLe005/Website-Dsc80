@@ -64,6 +64,6 @@ the more towers are destroyed:
 
 <iframe src="{{ site.url }}{{ site.baseurl }}/assets/towers.html" width=800 height=600 frameBorder=0></iframe>
 
-One columns that does not depend on another is towers and barons:
+One columns that does not depend on another is towers and barons, as they are unrelated in missingness:
 
 <iframe src="{{ site.url }}{{ site.baseurl }}/assets/barons.html" width=800 height=600 frameBorder=0></iframe>

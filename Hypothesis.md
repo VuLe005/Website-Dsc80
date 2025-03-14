@@ -11,6 +11,14 @@ title: Hypothesis Testing
 filtered_df.groupby('class_actual')['damagemitigatedperminute'].agg(['mean','count'])
 ```
 
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/class_damagemitigated.html" width=800 height=600 frameBorder=0></iframe>
+
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/damagemitagedperminute.html" width=800 height=600 frameBorder=0></iframe>
+
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/damagetakenperminute.html" width=800 height=600 frameBorder=0></iframe>
+
+
+
 ## Setup
 
 Some fun facts about the setup of this project include:
