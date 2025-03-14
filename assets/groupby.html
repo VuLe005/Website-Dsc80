@@ -2,8 +2,8 @@
 <html>
 <head>
     <style>
-        .styled-table {
-            width: 50%;
+        .table {
+            width: 60%;
             border-collapse: collapse;
             margin: 20px 0;
             font-size: 18px;
@@ -14,40 +14,28 @@
             border-bottom: 1px solid #ddd;
         }
         th {
-            background-color: #343a40;
-            color: white;
+            background-color: #f8f9fa;
             font-weight: bold;
         }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
         tr:hover {
-            background-color: #ddd;
+            background-color: #f1f1f1;
         }
     </style>
 </head>
 <body>
-    <table border="1" class="dataframe styled-table">
+    <table border="1" class="dataframe table table-striped">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
       <th>mean</th>
       <th>count</th>
-    </tr>
-    <tr>
-      <th>class_actual</th>
-      <th></th>
-      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>tank/bruiser</th>
       <td>841.150132</td>
       <td>32494</td>
     </tr>
     <tr>
-      <th>tanky support</th>
       <td>510.573533</td>
       <td>12589</td>
     </tr>
