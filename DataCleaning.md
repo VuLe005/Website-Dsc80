@@ -16,16 +16,6 @@ print(raw_df.head().to_markdown(index=False))
 
 <iframe src="{{ site.url }}{{ site.baseurl }}/assets/cleaned_df_head.html" width=800 height=600 frameBorder=0></iframe>
 
-| gameid                | datacompleteness   | ...   | class        | class_actual   |
-|:----------------------|:-------------------|:------|:-------------|:---------------|
-| ESPORTSTMNT01_2690210 | complete           | ...   | tank/bruiser | tank/bruiser   |
-| ESPORTSTMNT01_2690210 | complete           | ...   | tank/bruiser | tank/bruiser   |
-| ESPORTSTMNT01_2690210 | complete           | ...   | non-tank     | non-tank       |
-| ... | ... | ... | ... | ... |
-|:----------------------|:-------------------|:------|:-------------|:---------------|
-| ESPORTSTMNT01_3268705 | complete           | ...   | non-tank      | non-tank       |
-| ESPORTSTMNT01_3268705 | complete           | ...   | non-tank      | non-tank       |
-| ESPORTSTMNT01_3268705 | complete           | ...   | tanky support | non-tank       |
 
 Learn more and contribute on [GitHub](https://github.com/poole).
 
