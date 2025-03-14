@@ -45,21 +45,26 @@ accuracy
 
 Univariate Analysis:
 
-<iframe src="{{ site.url }}{{ site.baseurl }}/assets/class_actual.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/earned_gold_distribtion.html" width=800 height=600 frameBorder=0></iframe>
+
+* This bimodal curve distribution tells us that there are two distinct groups of gold-earners within this dataset
+* Makes sense because certain champions and positions are expected to earn gold on different levels
 
 Bivariate Analysis:
 
 <iframe src="{{ site.url }}{{ site.baseurl }}/assets/damagetakenperminute.html" width=800 height=600 frameBorder=0></iframe>
 
+* Because of the variance in stats for each position, we can have some confidence that this will be a good metric for predicting positions
+* It is clear that top and jungle positions take the most damage while bottom and support take the least
 
 Assesment of missingness:
 
-One column that depends on another is towers and gamelength, which the longer the game happens,
+* One column that depends on another is towers and gamelength, which the longer the game happens,
 the more towers are destroyed
 
 <iframe src="{{ site.url }}{{ site.baseurl }}/assets/towers.html" width=800 height=600 frameBorder=0></iframe>
 
-One columns that does not depend on another is towers and barons
+* One columns that does not depend on another is towers and barons
 
 <iframe src="{{ site.url }}{{ site.baseurl }}/assets/barons.html" width=800 height=600 frameBorder=0></iframe>
 
