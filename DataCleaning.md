@@ -4,15 +4,12 @@ title: Data Cleaning and EDA
 ---
 
 <p class="message">
-  This section is dedicated to describing how we cleaned and pre-porcessed the data.
+  This section is dedicated to describing how we cleaned and pre-processed the data.
 </p>
 
 
 Here's our initial data:
 
-```py
-print(raw_df.head().to_markdown(index=False))
-```
 
 <iframe src="assets/raw_head.html" width=800 height=600 frameBorder=0></iframe>
 
