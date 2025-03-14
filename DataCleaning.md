@@ -40,7 +40,10 @@ mapped class to compare accuracy.
 ```py
 accuracy = (cleaned_df['class'] == cleaned_df['class_actual']).mean()
 accuracy
+0.7817412624393058
 ```
+
+
 
 
 
