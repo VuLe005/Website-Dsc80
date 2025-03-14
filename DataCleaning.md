@@ -1,15 +1,20 @@
 ---
 layout: page
-title: Test
+title: Data Cleaning and EDA
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  This section is dedicated to describing how we cleaned and pre-porcessed the data.
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
 
-There are currently two themes built on Poole:
+Here's our initial data:
+
+```py
+print(raw_df.head().to_markdown(index=False))
+```
+
+<iframe src="assets/raw_head.html" width=800 height=600 frameBorder=0></iframe>
 
 * [Hyde](http://hyde.getpoole.com)
 * [Lanyon](http://lanyon.getpoole.com)
