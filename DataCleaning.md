@@ -10,8 +10,11 @@ title: Data Cleaning and EDA
 
 Here's our initial data:
 
+```py
+print(raw_df.head().to_markdown(index=False))
+```
 
-<iframe src="assets/raw_head.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="_includes/raw_head.html" width=800 height=600 frameBorder=0></iframe>
 
 * [Hyde](http://hyde.getpoole.com)
 * [Lanyon](http://lanyon.getpoole.com)
