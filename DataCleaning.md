@@ -14,7 +14,7 @@ Here's our initial data:
 print(raw_df.head().to_markdown(index=False))
 ```
 
-<!-- <iframe src="{{ site.url }}{{ site.baseurl }}/assets/raw_head.html" width=800 height=600 frameBorder=0></iframe> -->
+<!-- <iframe src="{{ site.url }}{{ site.baseurl }}/assets/cleaned_df_head.html" width=800 height=600 frameBorder=0></iframe> -->
 
 | gameid                | datacompleteness   | ...   | class        | class_actual   |
 |:----------------------|:-------------------|:------|:-------------|:---------------|
