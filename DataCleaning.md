@@ -19,10 +19,14 @@ print(raw.head())
 <iframe src="{{ site.url }}{{ site.baseurl }}/assets/raw_head.html" width=800 height=600 frameBorder=0></iframe>
 
 This data has too many unnecessary columns that aren't needed such as first dragon, first baron, golddiffat20
-which won't answer our question. Thus, we dropped the majority of the columns. After dropping columns, we 
-then filtered for all data that 
+which won't answer our question. Thus, we dropped the majority of the columns. After dropping columns, we assigned
+new columns such as "kill share", filtered out the incomplete data using the "completness" column, and then
+dropping all NA.
 
 Here's our cleaned data:
+
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/cleaned_df_head.html" width=800 height=600 frameBorder=0></iframe>
+
 
 ## Setup
 
