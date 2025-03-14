@@ -56,3 +56,14 @@ Bivariate Analysis:
 
 * Because of the variance in stats for each position, we can have some confidence that this will be a good metric for predicting positions
 * It is clear that top and jungle positions take the most damage while bottom and support take the least
+
+Assesment of missingness:
+
+One column that depends on another is towers and gamelength, which the longer the game happens,
+the more towers are destroyed:
+
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/towers.html" width=800 height=600 frameBorder=0></iframe>
+
+One columns that does not depend on another is towers and barons:
+
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/barons.html" width=800 height=600 frameBorder=0></iframe>
