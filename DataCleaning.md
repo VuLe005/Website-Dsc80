@@ -45,7 +45,7 @@ accuracy
 
 Univariate Analysis:
 
-<iframe src="{{ site.url }}{{ site.baseurl }}/assets/earned_gold_distribtion.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/earned_gold_distribution.html" width=800 height=600 frameBorder=0></iframe>
 
 * This bimodal curve distribution tells us that there are two distinct groups of gold-earners within this dataset
 * Makes sense because certain champions and positions are expected to earn gold on different levels
@@ -56,28 +56,3 @@ Bivariate Analysis:
 
 * Because of the variance in stats for each position, we can have some confidence that this will be a good metric for predicting positions
 * It is clear that top and jungle positions take the most damage while bottom and support take the least
-
-Assesment of missingness:
-
-* One column that depends on another is towers and gamelength, which the longer the game happens,
-the more towers are destroyed
-
-<iframe src="{{ site.url }}{{ site.baseurl }}/assets/towers.html" width=800 height=600 frameBorder=0></iframe>
-
-* One columns that does not depend on another is towers and barons
-
-<iframe src="{{ site.url }}{{ site.baseurl }}/assets/barons.html" width=800 height=600 frameBorder=0></iframe>
-
-
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](https://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Atom](https://atom.io)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
