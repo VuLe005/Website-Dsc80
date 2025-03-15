@@ -22,7 +22,7 @@ Explanation:
 ```py
 filtered_df.groupby('class_actual')['damagemitigatedperminute'].agg(['mean','count'])
 ```
-<iframe src="{{ site.url }}{{ site.baseurl }}/assets/groupby.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/groupby.html" width=800 height=300 frameBorder=0></iframe>
 
 We now need to observe the mean difference between both tank/bruiser and tanky supports. Here's
 an interactable graph for damage mitgated per minute for each class
