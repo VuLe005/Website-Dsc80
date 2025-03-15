@@ -57,6 +57,12 @@ Bivariate Analysis:
 * Because of the variance in stats for each position, we can have some confidence that this will be a good metric for predicting positions
 * It is clear that top and jungle positions take the most damage while bottom and support take the least
 
+Aggregation:
+
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/damageperminute.html" width=800 height=600 frameBorder=0></iframe>
+
+* 
+
 Assesment of missingness:
 
 A lot of the data is missing in general which is shown in the column "datacompleteness", which we already filtered
