@@ -17,6 +17,9 @@ To a person who doesn't play games, it won't matter much. But to a person who pl
 how impactfull a tank/bruiser is compared to a tanky support, may help in creating a strategic team full of optimal
 champions that may be better than the current optimal team.
 
+
+Here's our dataframe with the 104005 rows and columns needed:
+
 ```py
 df[['class_actual','damagemitigatedperminute','wardsplaced','dpm']]
 ```
