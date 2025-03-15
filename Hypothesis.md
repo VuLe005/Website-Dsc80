@@ -3,21 +3,31 @@ layout: page
 title: Hypothesis Testing
 ---
 
-Question: Do tanks/bruiser have higher damage mitigated per minute compared to tanky supports?
-Null Hypothesis: Tanks/bruisers have a higher damage mitigated than tanky supports.
-Alternate Hypothesis: Tanks/bruisers have a lower damage mitigated than tanky supports.
-Test Statistic: Difference in Means
-Alpha Level: .05
-
-Explanation:
-    Null Hypothesis: Tanks/bruisers should have higher damage mitigated per minute due to being a solo laner ( Top Lane )
-    Alternate Hypothesis: Opposite to the null hypothesis. Tanky supports should be protecting their ADC, and shielding the damage
-    Test Statistic: We should be able to see a mean difference if true, since damage mitigated per minute is a numerical value
-    Alpha Level: We set an alpha level of .05, because this is common and is enough to showcase if our p-value is true
-
 <p class="message">
     This section is dedicated to the Hypothesis Testing
 </p>
+
+Question: Do tanks/bruiser have higher damage mitigated per minute compared to tanky supports?
+
+Null Hypothesis: Tanks/bruisers have a higher damage mitigated than tanky supports.
+
+Alternate Hypothesis: Tanks/bruisers have a lower damage mitigated than tanky supports.
+
+Test Statistic: Difference in Means
+
+Alpha Level: .05
+
+Explanation:
+
+    Null Hypothesis: Tanks/bruisers should have higher damage mitigated per minute due to being a solo laner ( Top Lane )
+
+    Alternate Hypothesis: Opposite to the null hypothesis. Tanky supports should be protecting their ADC, and shielding the damage
+
+    Test Statistic: We should be able to see a mean difference if true, since damage mitigated per minute is a numerical value
+
+    Alpha Level: We set an alpha level of .05, because this is common and is enough to showcase if our p-value is true
+
+
 
 ```py
 filtered_df.groupby('class_actual')['damagemitigatedperminute'].agg(['mean','count'])
