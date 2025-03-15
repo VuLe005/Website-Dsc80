@@ -21,7 +21,7 @@ champions that may be better than the current optimal team.
 df[['class_actual','damagemitigatedperminute','wardsplaced','dpm']]
 ```
 
-<iframe src="{{ site.url }}{{ site.baseurl }}/assets/raw_head.html" width=800 height=500 frameBorder=0></iframe>
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/filtered.html" width=800 height=500 frameBorder=0></iframe>
 
 ### Browser support
 
