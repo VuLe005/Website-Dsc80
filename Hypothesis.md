@@ -19,13 +19,17 @@ Alpha Level: .05
 
 Explanation:
 
-    Null Hypothesis: Tanks/bruisers should have higher damage mitigated per minute due to being a solo laner ( Top Lane )
+    Null Hypothesis: Tanks/bruisers should have higher damage mitigated
+     per minute due to being a solo laner ( Top Lane )
 
-    Alternate Hypothesis: Opposite to the null hypothesis. Tanky supports should be protecting their ADC, and shielding the damage
+    Alternate Hypothesis: Opposite to the null hypothesis. Tanky supports
+     should be protecting their ADC, and shielding the damage
 
-    Test Statistic: We should be able to see a mean difference if true, since damage mitigated per minute is a numerical value
+    Test Statistic: We should be able to see a mean difference if true,
+     since damage mitigated per minute is a numerical value
 
-    Alpha Level: We set an alpha level of .05, because this is common and is enough to showcase if our p-value is true
+    Alpha Level: We set an alpha level of .05, because this is common
+     and is enough to showcase if our p-value is true
 
 
 
