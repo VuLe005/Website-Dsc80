@@ -59,11 +59,56 @@ Bivariate Analysis:
 
 Assesment of missingness:
 
+A lot of the data is missing in general which is shown in the column "datacompleteness", which we already filtered
+for completeness. This means that any missing data left is NMAR, for example, 'goldat25mins' has some missing values
+which can be expected because not all games last 25 mins long. Thus it's NMAR.
+
 One column that depends on another is towers and gamelength, which the longer the game happens,
 the more towers are destroyed:
 
+```py
+nmar_col = 'towers'
+other_col = 'gamelength'
+miss = raw.dropna(subset = [other_col])[[other_col, nmar_col]].assign(missing = raw[nmar_col].isna())
+observed_diff = miss.groupby('missing')[other_col].mean().diff().iloc[1]
+reps = 500
+diffs = list()
+for _ in range(reps):
+    shuf_df = miss.assign(shuffled = np.random.permutation(miss[nmar_col]))
+    diff = shuf_df.groupby('shuffled')[other_col].mean().diff().iloc[1]
+    diffs.append(diff)
+fig = px.histogram(np.array(diffs))
+fig.add_vline(x = observed_diff, line_color = 'red')
+fig.show()
+print((np.array(diffs) <= observed_diff).mean())
+```
+
 <iframe src="{{ site.url }}{{ site.baseurl }}/assets/towers.html" width=800 height=600 frameBorder=0></iframe>
 
+```py
+.498
+```
+
 One columns that does not depend on another is towers and barons, as they are unrelated in missingness:
+
+```py
+nmar_col = 'towers'
+other_col = 'barons'
+miss = raw.dropna(subset = [other_col])[[other_col, nmar_col]].assign(missing = raw[nmar_col].isna())
+observed_diff = miss.groupby('missing')[other_col].mean().diff().iloc[1]
+reps = 500
+diffs = list()
+for _ in range(reps):
+    shuf_df = miss.assign(shuffled = np.random.permutation(miss[nmar_col]))
+    diff = shuf_df.groupby('shuffled')[other_col].mean().diff().iloc[1]
+    diffs.append(diff)
+fig = px.histogram(np.array(diffs))
+fig.add_vline(x = observed_diff, line_color = 'red')
+fig.show()
+print((np.array(diffs) <= observed_diff).mean())
+```
+```py
+0.0
+```
 
 <iframe src="{{ site.url }}{{ site.baseurl }}/assets/barons.html" width=800 height=600 frameBorder=0></iframe>
