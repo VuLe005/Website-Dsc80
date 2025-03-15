@@ -24,14 +24,10 @@ Here's our dataframe with the 104005 rows and columns needed:
 df[['class_actual','damagemitigatedperminute','wardsplaced','dpm']]
 ```
 
-<iframe src="{{ site.url }}{{ site.baseurl }}/assets/filtered.html" width=800 height=500 frameBorder=0></iframe>
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/filtered.html" width=800 height=400 frameBorder=0></iframe>
 
-### Browser support
 
-Lanyon is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.
-
-### Download
-
-Lanyon is developed on and hosted with GitHub. Head to the <a href="https://github.com/poole/lanyon">GitHub repository</a> for downloads, bug reports, and features requests.
-
-Thanks!
+* class_actual: A manually mapped class that dictates whether it's tank/bruiser or tanky support
+* damagemitigatedperminute: Damage mitigated per minute (Damage shielded or blocked)
+* wardsplaced: How many wards are placed (item in game)
+* dpm: damage per minute
