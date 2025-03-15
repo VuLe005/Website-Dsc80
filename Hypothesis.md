@@ -32,12 +32,12 @@ Explanation:
 ```py
 filtered_df.groupby('class_actual')['damagemitigatedperminute'].agg(['mean','count'])
 ```
-<iframe src="{{ site.url }}{{ site.baseurl }}/assets/groupby.html" width=800 height=100 frameBorder=0></iframe>
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/groupby.html" width=800 height=200 frameBorder=0></iframe>
 
 We now need to observe the mean difference between both tank/bruiser and tanky supports. Here's
 an interactable graph for damage mitgated per minute for each class
 
-<iframe src="{{ site.url }}{{ site.baseurl }}/assets/damagemitigatedperminute_for_class.html" width=800 height=300 frameBorder=0></iframe>
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/damagemitigatedperminute_for_class.html" width=800 height=600 frameBorder=0></iframe>
 
 In order to test our data, we need to shuffle the values around.
 ```py
@@ -45,14 +45,14 @@ with_shuffled = filtered_df.assign(Shuffled_Weights=np.random.permutation(filter
 with_shuffled.head()
 ```
 
-<iframe src="{{ site.url }}{{ site.baseurl }}/assets/shuffled_df.html" width=800 height=100 frameBorder=0></iframe>
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/shuffled_df.html" width=800 height=400 frameBorder=0></iframe>
 
 ```py
 group_means = with_shuffled.groupby('class_actual').mean()
 group_means
 ```
 
-<iframe src="{{ site.url }}{{ site.baseurl }}/assets/group_means.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/group_means.html" width=800 height=200 frameBorder=0></iframe>
 
 We can now compare the original graph, and the shuffled columns graph.
 <iframe src="{{ site.url }}{{ site.baseurl }}/assets/shuffled_graph1.html" width=800 height=600 frameBorder=0></iframe>
