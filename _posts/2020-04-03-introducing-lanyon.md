@@ -1,31 +1,24 @@
 ---
 layout: post
-title: Introducing Lanyon
+title: Background
 ---
 
-Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+What is Leauge of Legends?
 
-### Built on Poole
+Leauge of Legends is a 5v5 MOBA game, where a team strives to break the enemies nexus to win. Each person has
+a role that they need to efficiently fufill, such as tanks, damage dealers, and supports. We will be focusing
+mostly on tanks and supports for our data.
 
-Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by [@mdo](https://twitter.com/mdo). Poole, and every theme built on it (like Lanyon here) includes the following:
+Our hypothesis question is: Do tanks/bruiser have higher damage mitigated per minute compared to tanky supports?
 
-* Complete Jekyll setup included (layouts, config, [404](/404), [RSS feed](/atom.xml), posts, and [example page](/about))
-* Mobile friendly design and development
-* Easily scalable text and component sizing with `rem` units in the CSS
-* Support for a wide gamut of HTML elements
-* Related posts (time-based, because Jekyll) below each post
-* Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)
+Why does this matter?
 
-### Lanyon features
+To a person who doesn't play games, it won't matter much. But to a person who plays leauge of legends, by understanding
+how impactfull a tank/bruiser is compared to a tanky support, may help in creating a strategic team full of optimal
+champions that may be better than the current optimal team.
 
-In addition to the features of Poole, Lanyon adds the following:
 
-* Toggleable sliding sidebar (built with only CSS) via **☰** link in top corner
-* Sidebar includes support for textual modules and a dynamically generated navigation with active link support
-* Two orientations for content and sidebar, default (left sidebar) and [reverse](https://github.com/poole/lanyon#reverse-layout) (right sidebar), available via `<body>` classes
-* [Eight optional color schemes](https://github.com/poole/lanyon#themes), available via `<body>` classes
 
-[Head to the readme](https://github.com/poole/lanyon#readme) to learn more.
 
 ### Browser support
 

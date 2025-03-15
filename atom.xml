@@ -11,8 +11,10 @@ layout: null
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>{{ site.url }}</id>
  <author>
-   <name>{{ site.author.name }}</name>
-   <email>{{ site.author.email }}</email>
+   <name1>{{ site.author.name1 }}</name1>
+   <email1>{{ site.author.email1 }}</email1>
+   <name2>{{ site.author.name2 }}</name2>
+   <email2>{{ site.author.email2 }}</email2>
  </author>
 
  {% for post in site.posts %}
