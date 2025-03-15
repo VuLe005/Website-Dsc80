@@ -81,7 +81,8 @@ A lot of the data is missing in general which is shown in the column "datacomple
 for completeness. This means that any missing data left is NMAR, for example, 'goldat25mins' has some missing values
 which can be expected because not all games last 25 mins long. Thus it's NMAR.
 
-One column that depends on another is towers and gamelength, which the longer the game happens,
+Tanks/Bruisers tend to destroy towers more often than tanky supports, becaues that is one of the jobs of 
+a top laner. One column that depends on another is towers and gamelength, which the longer the game happens,
 the more towers are destroyed:
 
 ```py
@@ -107,7 +108,9 @@ print((np.array(diffs) <= observed_diff).mean())
 .498
 ```
 
-One columns that does not depend on another is towers and barons, as they are unrelated in missingness:
+Tanks/Bruisers destroying towers more often than tanky supports should not affect Barons, as
+Barons require a team to kill. One columns that does not depend on another is towers and barons,
+as they are unrelated in missingness:
 
 ```py
 nmar_col = 'towers'
