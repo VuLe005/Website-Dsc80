@@ -65,8 +65,10 @@ Aggregation:
 * hard to be confident in true levels because there are significantly less tanky supports seen
 * this is why we are going to run a hypothesis test, to see how significant the differences in dmpm are
 
-```py
 <iframe src="{{ site.url }}{{ site.baseurl }}/assets/picot_code.html" width=800 height=600 frameBorder=0></iframe>
+
+```py
+df.pivot_table(index = 'class', values = 'damagemitigatedperminute', aggfunc = ['mean', 'sum'])
 ```
 
 * This table shows the same thing as the graph above but in table-form
