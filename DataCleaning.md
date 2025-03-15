@@ -69,7 +69,7 @@ Aggregation:
 df.pivot_table(index = 'class', values = 'damagemitigatedperminute', aggfunc = ['mean', 'sum'])
 ```
 
-<iframe src="{{ site.url }}{{ site.baseurl }}/assets/pivot_code.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/pivot_code.html" width=800 height=300 frameBorder=0></iframe>
 
 
 
